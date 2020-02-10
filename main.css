@@ -1,0 +1,337 @@
+@charset "UTF-8";
+/*========= base ===========*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans CJK JP", "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", sans-serif;
+  color: #333;
+}
+
+.grid-container {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: 1fr 1000px 1fr;
+  grid-template-rows: auto auto auto;
+}
+
+h2, h3, h4, h5 {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+ul, li, dl, dt, dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  transition: .3s;
+  opacity: 0.6;
+}
+
+section {
+  margin-bottom: 120px;
+}
+
+.content-wrapper {
+  margin: 0 auto;
+}
+
+/*========= header ===========*/
+.header {
+  grid-area: 1 / 1 / 2 / 4;
+  height: 500px;
+  margin-bottom: 95px;
+  padding: 0 140px;
+  background-image: url(./img/img3.jpg);
+  object-fit: contain;
+  height: 500px;
+}
+
+.header .header-nav {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.header .header-nav .nav {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  line-height: 90px;
+}
+
+.header .header-nav .nav .nav-item:not(:last-child) {
+  margin-right: 52px;
+}
+
+.header .header-nav .nav button {
+  width: 120px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  border-style: none;
+  border-radius: 6px;
+  background-color: lightgray;
+}
+
+.header .catch-copy {
+  position: absolute;
+  top: 150px;
+}
+
+.header .catch-copy h1 {
+  font-size: 50px;
+}
+
+.header .catch-copy p {
+  font-size: 22px;
+}
+
+/*========= greeting ===========*/
+.greeting {
+  grid-area: 2 / 2 / 3 / 3;
+  height: 646px;
+  width: 827px;
+  margin: 0 auto 79px auto;
+}
+
+.greeting .contents {
+  width: 69%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.greeting .contents h2 {
+  margin-bottom: 44px;
+}
+
+.greeting .contents h4 {
+  font-size: 22px;
+  font-weight: normal;
+  margin-bottom: 35px;
+}
+
+.greeting .contents p {
+  font-size: 18px !important;
+}
+
+.greeting .contents p:last-child {
+  margin-bottom: 32px;
+}
+
+.greeting .contents-img {
+  width: 100%;
+  height: 297px;
+}
+
+.greeting .contents-img img {
+  height: 297px;
+  object-fit: cover;
+  object-position: -2px -185px;
+}
+
+/*========= service ===========*/
+.service {
+  grid-area: 3 / 2 / 4 / 3;
+  margin-bottom: 131px;
+}
+
+.service .plan-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service .plan-wrap .plan {
+  width: 300px;
+  height: 434px;
+  text-align: center;
+  margin: 0 35px;
+  background-image: url(./img/img3.jpg);
+}
+
+.service .plan-wrap .plan p:first-child {
+  font-size: 24px;
+  color: #D633A4;
+  text-align: initial;
+  margin: 20px auto 47px 38px;
+}
+
+.service .plan-wrap p:last-child {
+  width: 231px;
+  margin: auto auto 32px auto;
+  font-size: 16px !important;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.service h3 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 21px;
+}
+
+.service figure {
+  margin: 21px auto 37px auto;
+}
+
+.service figure img {
+  width: 95px;
+  height: 95px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.service figure img:hover {
+  transition: .3s;
+  opacity: .6;
+}
+
+/*========= gallery ===========*/
+.gallery {
+  grid-area: 4 / 1 / 5 / 4;
+  height: 355px;
+  margin-bottom: 84px;
+  overflow: hidden;
+}
+
+.gallery .content-wrapper {
+  height: 355px;
+}
+
+.gallery .content-wrapper .gallery-wrap {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.gallery .content-wrapper .gallery-wrap figure {
+  margin: 0;
+}
+
+.gallery .content-wrapper .gallery-wrap figure img {
+  width: 453px;
+  height: 254px;
+  object-fit: cover;
+  margin-right: 44px;
+}
+
+.gallery .content-wrapper .gallery-wrap figure img:hover {
+  transition: .3s;
+  opacity: .6;
+}
+
+/*========= about ===========*/
+.about {
+  grid-area: 5 / 2 / 6 / 3;
+}
+
+.about .about-wrap table {
+  width: 100%;
+  margin-bottom: 54px;
+  border-collapse: collapse;
+}
+
+.about .about-wrap table tr {
+  border-bottom: solid 1px lightgray;
+}
+
+.about .about-wrap table tr th {
+  width: 10%;
+  padding-top: 35px;
+  text-align: left;
+  vertical-align: top;
+  line-height: 2;
+}
+
+.about .about-wrap table tr td {
+  padding: 35px 0 15px 69px;
+  line-height: 2;
+}
+
+.about .about-wrap table tr a {
+  text-decoration: underline;
+}
+
+/*========= map ===========*/
+.map {
+  grid-area: 6 / 1 / 7 / 4;
+  margin-bottom: 112px;
+}
+
+/*========= answers ===========*/
+.answers {
+  grid-area: 7 / 2 / 8 / 3;
+  margin-bottom: 88px;
+}
+
+.info {
+  grid-area: 8 / 2 / 9 / 3;
+}
+
+.info h2 {
+  font-weight: 500;
+}
+
+.info table {
+  width: 100%;
+  margin-bottom: 54px;
+  border-collapse: collapse;
+}
+
+.info table tr {
+  border-bottom: solid 1px lightgray;
+}
+
+.info table tr th {
+  width: 10%;
+  padding-top: 35px;
+  text-align: left;
+  vertical-align: top;
+  line-height: 2;
+}
+
+.info table tr th time {
+  font-weight: 500;
+}
+
+.info table tr td {
+  padding: 35px 0 15px 69px;
+  line-height: 2;
+}
+
+.info table tr a {
+  text-decoration: underline;
+}
+
+/*========= footer ===========*/
+.footer {
+  grid-area: 9 / 1 / 10 / 4;
+  height: 171px;
+  background-image: url(./img/img3.jpg);
+}
+
+.footer .copylight {
+  text-align: center;
+  line-height: 171px;
+}
+
+.footer .copylight p {
+  margin: 0;
+}
